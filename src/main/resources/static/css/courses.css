@@ -145,7 +145,7 @@ a:hover {
         transition: transform 0.3s ease;
     }
     .postcard .postcard__text {
-        padding: 3rem;
+        padding: 4rem;
         width: 100%;
     }
     .postcard .media.postcard__text:before {
@@ -167,12 +167,12 @@ a:hover {
         flex-direction: row-reverse;
     }
     .postcard:nth-child(2n+1) .postcard__text::before {
-        left: -12px !important;
-        transform: rotate(4deg);
+        left: -60px !important;
+        transform: rotate(0deg);
     }
     .postcard:nth-child(2n+0) .postcard__text::before {
-        right: -12px !important;
-        transform: rotate(-4deg);
+        right: -60px !important;
+        transform: rotate(0deg);
     }
 }
 @media screen and (min-width: 1024px) {
@@ -312,5 +312,9 @@ a:hover {
     .yellow:nth-child(2n)::before {
         background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
     }
+}
+
+span {
+    content: "\2713";
 }
 

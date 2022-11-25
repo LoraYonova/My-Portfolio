@@ -5,34 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Project</title>
+    <title>My Courses</title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <link rel="stylesheet" th:href="@{/css/courses.css}">
+    <link rel="stylesheet" href="/css/courses.css">
 </head>
 <body>
 <section class="dark">
     <div class="container py-4">
-        <h1 class="h1 text-center" id="pageHeaderTitle">My Courses</h1>
+        <h1 class="h1 text-center" id="pageHeaderTitle" >My Courses</h1>
         <div class="text-center">
-            <img th:src="@{/images/Java 2.png}" class="rounded" alt="Java Image">
+            <img src="/images/Java 2.png" class="rounded" alt="Java Image">
         </div>
 
         <article class="postcard dark blue">
-            <a class="postcard__img_link" href="#">
-                <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
-            </a>
+<!--            <a class="postcard__img_link" href="#">-->
+<!--                <img class="postcard__img" src="/images/100200.jpg" alt="Image Title" />-->
+<!--            </a>-->
             <div class="postcard__text">
-                <h1 class="postcard__title blue"><a href="#">Podcast Title</a></h1>
+                <h1 class="postcard__title red"><a href="#">Programming Basics with Java</a></h1>
                 <div class="postcard__subtitle small">
                     <time datetime="2020-05-25 12:00:00">
-                        <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                        <i class="fas fa-calendar-alt mr-2"></i> January 2021
                     </time>
                 </div>
                 <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <div class="postcard__preview-txt">
+                    <span><br>&#10003; Working with the console (data input and output)<br></span>
+                    <span><br>&#10003; Working with loops (for)<br></span>
+                    <span><br>&#10003; Work with more complex logical checks<br></span>
+                    <span><br>&#10003; Working with logical checks (if-else)<br></span>
+                    <span><br>&#10003; Working with more complex loops (nested for loops and while)</span>
+                </div>
                 <ul class="postcard__tagbox">
                     <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
                     <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
@@ -43,18 +49,19 @@
             </div>
         </article>
         <article class="postcard dark red">
-            <a class="postcard__img_link" href="#">
-                <img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />
-            </a>
             <div class="postcard__text">
-                <h1 class="postcard__title red"><a href="#">Podcast Title</a></h1>
+                <h1 class="postcard__title red"><a href="#">Programming Fundamentals with Java</a></h1>
                 <div class="postcard__subtitle small">
                     <time datetime="2020-05-25 12:00:00">
-                        <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                        <i class="fas fa-calendar-alt mr-2"></i>May 2021
                     </time>
                 </div>
                 <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <div class="postcard__preview-txt">
+                    <span><br>&#10003; Basics of web development<br></span>
+                    <span><br>&#10003; Basic HTML and CSS skills<br></span>
+                    <span><br>&#10003; Working with linear data structures<br></span>
+                </div>
                 <ul class="postcard__tagbox">
                     <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
                     <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
@@ -65,18 +72,22 @@
             </div>
         </article>
         <article class="postcard dark green">
-            <a class="postcard__img_link" href="#">
-                <img class="postcard__img" src="https://picsum.photos/500/501" alt="Image Title" />
-            </a>
             <div class="postcard__text">
-                <h1 class="postcard__title green"><a href="#">Podcast Title</a></h1>
+                <h1 class="postcard__title green"><a href="#">Java Advanced</a></h1>
                 <div class="postcard__subtitle small">
                     <time datetime="2020-05-25 12:00:00">
-                        <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                        <i class="fas fa-calendar-alt mr-2"></i>September 2021
                     </time>
                 </div>
                 <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <div class="postcard__preview-txt">
+                    <span><br>&#10003; Creating linear data structures<br></span>
+                    <span><br>&#10003; Fundamentals of functional programming<br></span>
+                    <span><br>&#10003; Create template classes<br></span>
+                    <span><br>&#10003; Application of basic algorithms<br></span>
+                    <span><br>&#10003; Work with data streams, files and directories<br></span>
+                    <span><br>&#10003; Working with multidimensional and associative data structures<br></span>
+                </div>
                 <ul class="postcard__tagbox">
                     <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
                     <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
@@ -87,18 +98,121 @@
             </div>
         </article>
         <article class="postcard dark yellow">
-            <a class="postcard__img_link" href="#">
-                <img class="postcard__img" src="https://picsum.photos/501/501" alt="Image Title" />
-            </a>
             <div class="postcard__text">
-                <h1 class="postcard__title yellow"><a href="#">Podcast Title</a></h1>
+                <h1 class="postcard__title yellow"><a href="#">Java OOP</a></h1>
                 <div class="postcard__subtitle small">
                     <time datetime="2020-05-25 12:00:00">
-                        <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                        <i class="fas fa-calendar-alt mr-2"></i>October 2021
                     </time>
                 </div>
                 <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                <div class="postcard__preview-txt">
+                    <span><br>&#10003; Understanding the object-oriented programming paradigm<br></span>
+                    <span><br>&#10003; Data encapsulation<br></span>
+                    <span><br>&#10003; Application of the principles of object-oriented programming<br></span>
+                    <span><br>&#10003; Creating a class hierarchy and inheritance<br></span>
+                </div>
+                <ul class="postcard__tagbox">
+                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                    <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                    <li class="tag__item play yellow">
+                        <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="postcard dark blue">
+            <!--            <a class="postcard__img_link" href="#">-->
+            <!--                <img class="postcard__img" src="/images/100200.jpg" alt="Image Title" />-->
+            <!--            </a>-->
+            <div class="postcard__text">
+                <h1 class="postcard__title red"><a href="#">MySQL</a></h1>
+                <div class="postcard__subtitle small">
+                    <time datetime="2020-05-25 12:00:00">
+                        <i class="fas fa-calendar-alt mr-2"></i> January 2022
+                    </time>
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                    <span><br>&#10003; Transaction management<br></span>
+                    <span><br>&#10003; Fundamental knowledge of databases<br></span>
+                    <span><br>&#10003; DB relation management<br></span>
+                    <span><br>&#10003; Creation of basic Back-End architectures<br></span>
+
+                </div>
+                <ul class="postcard__tagbox">
+                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                    <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                    <li class="tag__item play blue">
+                        <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="postcard dark red">
+            <div class="postcard__text">
+                <h1 class="postcard__title red"><a href="#">Spring Data</a></h1>
+                <div class="postcard__subtitle small">
+                    <time datetime="2020-05-25 12:00:00">
+                        <i class="fas fa-calendar-alt mr-2"></i>February 2021
+                    </time>
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                    <span><br>&#10003; Building an application architecture correctly<br></span>
+                    <span><br>&#10003; Building connections between an application and a database<br></span>
+                    <span><br>&#10003; Working with XML and JSON data formats<br></span>
+                </div>
+                <ul class="postcard__tagbox">
+                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                    <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                    <li class="tag__item play red">
+                        <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="postcard dark green">
+            <div class="postcard__text">
+                <h1 class="postcard__title green"><a href="#">Spring Fundamentals</a></h1>
+                <div class="postcard__subtitle small">
+                    <time datetime="2020-05-25 12:00:00">
+                        <i class="fas fa-calendar-alt mr-2"></i>May 2022
+                    </time>
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                    <span><br>&#10003; Generate HTML content using templates<br></span>
+                    <span><br>&#10003; Working with the HTTP protocol<br></span>
+                    <span><br>&#10003; Basic principles of working with Spring framework<br></span>
+                    <span><br>&#10003; Building web applications with the Spring MVC framework<br></span>
+                    <span><br>&#10003; Bootstrap skills and experience<br></span>
+                </div>
+                <ul class="postcard__tagbox">
+                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                    <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                    <li class="tag__item play green">
+                        <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="postcard dark yellow">
+            <div class="postcard__text">
+                <h1 class="postcard__title yellow"><a href="#">Spring Advanced</a></h1>
+                <div class="postcard__subtitle small">
+                    <time datetime="2020-05-25 12:00:00">
+                        <i class="fas fa-calendar-alt mr-2"></i>June 2022
+                    </time>
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">
+                    <span><br>&#10003; Building REST services with Spring<br></span>
+                    <span><br>&#10003; Authentication and security Architecture in Spring MVC the applications<br></span>
+                    <span><br>&#10003; Deploying a Spring MVC application<br></span>
+                    <span><br>&#10003; Fundamentals of testing in web applications built with Spring MVC<br></span>
+                    <span><br>&#10003; Building more complex web applications with the Spring framework<br></span>
+                </div>
                 <ul class="postcard__tagbox">
                     <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
                     <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
